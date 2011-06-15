@@ -1,0 +1,4 @@
+= Vim Cucumber Snippets
+ An open source file full of cucumber snippets, for now there are only the simple web_steps turned into snippets
+
+
