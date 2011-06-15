@@ -1,0 +1,59 @@
+snippet pg
+	${1:Given} I am on "${2:page_name}"
+
+snippet gtp
+	${1:When} I go to "${2:page_name}"
+
+snippet press
+	${1:When} I press "${2:button}"
+
+snippet fill
+	${1:When} I fill in "${2:field}" with "${3:value}"
+
+snippet fillf
+	${1:When} I fill in "${2:value}" for "${3:field}"
+
+snippet select
+	${1:When} I select "${2:value}" from "${3:field}"
+
+snippet check
+	${1:When} I check "${2:field}" from "${3:selector}"
+
+snippet ucheck
+	${1:When} I uncheck "${2:field}" from "${3:selector}"
+
+snippet choose
+	${1:When} I choose "${2:field}"
+
+snippet file
+	${1:When} I attach the file "${2:path}" to "${3:field}"
+
+snippet json
+	${1:Then} I should see JSON:"${2}"
+
+snippet see
+	${1:Then} I should see "${2:text_or_regexp}"
+
+snippet nsee
+	${1:Then} I should not see "${2:text_or_regexp}"
+
+snippet fsh
+	${1:Then} the "${2:field}" field should contain "${2:value}"
+
+snippet nfsh
+	${1:Then} the "${2:field}" field should not contain "${2:value}"
+
+snippet chsh
+	${1:Then} the "${2:label}" checkbox should be checked "${2:selector}"
+
+snippet nchsh
+	${1:Then} the "${2:label}" checkbox should not be checked "${2:selector}"
+
+snippet shp
+	${1:Then} I should be on "${1:page_name}"
+
+snippet query
+	${1:Then} I should have the following query string:"${2:expected_pairs}" 
+
+snippet show
+	${1:Then} show me the page
