@@ -1,0 +1,112 @@
+# Conventions
+
+# * If the function name is one word, the trigger will be the function name
+# * If the function name has two words, the trigger will be the first word followed by the first letter of the second
+# * Snippets are ordered alphabetically
+
+snippet addc
+	$(${1:this}).addClass("${2:class}");
+	${3} 
+snippet ajax
+	$.ajax({
+				url: ${1:url},
+				data: ${2:data},
+				success: function(${3:data}) {
+					${4:success}
+				}
+	});
+	${5}
+snippet append
+	$(${1:this}).append("${2:message}");
+	${3}
+snippet attr
+	$(${1:this}).attr("${2:attribute}");
+	${3} 
+snippet click
+	$(${1:this}).click(function(${2:e}){
+		${3:action};
+	});
+	${4}
+snippet css
+	$(${1:this}).css("${2:attribute}");
+	${3}
+snippet dialog
+	$(${1:this})).dialog("${2:message}");
+	${3}
+snippet doc
+	$(document).ready(function(){
+		${1}
+	});
+snippet each
+	$(${1:this}).each(function(){
+		${2};
+	};
+	${3}
+snippet empty
+	$(${1:this}).empty();
+	${2}
+snippet find
+	$(${1:this}).find("${2:attribute}");
+	${3}
+snippet getj
+	$.getJSON(${1:url}, function(${2:data}) {
+		${3:action};
+	})
+	${4}
+snippet hide
+	$(${1:this}).hide();
+	${2}
+snippet html
+	$(${1:this}).html("${2:message}");
+	${3}
+# Just in case you need a jquery function
+snippet jqf
+	$(${1:this}).${2:function}("${3:message}");
+	${4}
+snippet keyup
+	$(${1:this}).keyup(function(){
+		${2};
+	};
+	${3}
+snippet live 
+	$(${1:this}).live("${2:function}", function(${3:e}){
+		${4:action};
+	});
+	${5}
+snippet loadd
+	$(${1:this})).dialog({ 
+		autoOpen: ${2:false}, 
+		draggable: ${3:false},
+		modal:${4:true}, 
+		resizable: ${5:false}
+	}); 
+	${6}
+snippet map
+	$.map(${1:data}, function(${2:item}) {
+		${3:action};
+	});
+	${4}
+snippet opend
+	$(${1:this})).dialog('open');
+	${2}
+snippet preppend
+	$(${1:this}).preppend("${2:message}");
+	${3}
+snippet prevent
+	e.preventDefault();
+	${1}
+snippet removec
+	$(${1:this}).removeClass("${2:class}");
+	${3}
+snippet show
+	$(${1:this}).show();
+	${2}
+snippet submit      
+	$('form${1:#id}').submit();
+	${2}
+snippet this
+	$(this)
+	${1}
+snippet trim
+	$.trim(${1:this})
+	${2}
