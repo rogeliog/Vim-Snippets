@@ -1,4 +1,4 @@
-= Vim Cucumber Snippets
+= Vim Snippets
 An open source file full of snippets, for now there are only snippets for the following formats: 
 * Cucumber 
 * Jquery 
