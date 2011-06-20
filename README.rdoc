@@ -1,16 +1,10 @@
 = Vim Snippets
-<<<<<<< HEAD
 An open source file full of vim snippets. The following formats are
 supported.
 
 * __Cucumber__: For now there are only some simple web_steps turned into snippets
 * __Jquery__
 * __Sinatra__
-=======
-An open source file full of snippets, for now there are only snippets for the following formats: 
-* Cucumber 
-* Jquery 
->>>>>>> 2527df5b875e84ceeef51a52af3589566614fe4d
 
 == Contribute
 
