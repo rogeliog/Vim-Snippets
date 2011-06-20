@@ -1,0 +1,105 @@
+snippet after
+	after do
+		${1:filter}
+	end
+	${2}
+snippet afterp
+	after '/${1}' do
+		${2:filter}
+	end
+	${3}
+snippet before
+	before do
+		${1:filter}
+	end
+	${2}
+# Filter before with block parameter
+snippet beforep
+	before '/${1}' do
+		${2:filter}
+	end
+	${3}
+snippet delete
+	delete '/${1}' do
+	  ${2:annihilate}
+	end
+
+	${3}
+snippet erb
+	erb :${1:index}
+	${2}
+snippet get
+	get '/${1}' do
+	  ${2:show}
+	end
+	
+	${3}
+# Get with block parameter
+snippet getb
+	get '/${1:/}/*' do |${2:param}|
+	  ${3}
+	end
+
+	${4}
+# Get with name parameter
+snippet getp
+	get '/${1}:${2:param}' do |$2|
+	  ${3:show}
+	end
+	
+	${4}
+# Get with regular expression
+snippet getr
+	get %r{${1:reg_exp}} do
+	  ${2:show}
+	end
+
+	${3}
+# Get with splat parameter
+snippet gets
+	get '/${1:name}/*' do
+	  ${2:show}
+	end
+
+	${3}
+snippet haml
+	haml :${1:index}
+	${2}
+snippet helpers
+	helpers do
+		def ${1:function}	
+			${2:action}
+		end
+	end
+
+	${3}
+snippet options
+	options '/${1}' do
+	  ${2:appease}
+	end
+
+	${3}
+snippet post
+	post '/${1}' do
+	  ${2:create}
+	end
+
+	${3}
+snippet put
+	put '/${1}' do
+	  ${2:update}
+	end
+
+	${3}
+snippet redirect
+	redirect to('/${1}')
+	${2}
+snippet sass
+	sass :${1:index}
+	${2}
+snippet send_to
+	send_to '${1:file}'
+	${2}
+snippet temp
+	${1:template} : ${2:index}
+	${3}

@@ -1,7 +1,20 @@
-= Vim Cucumber Snippets
-An open source file full of cucumber snippets, for now there are only the simple web_steps turned into snippets
+= Vim Snippets
+An open source file full of vim snippets. The following programs are
+supported.
+
+* __Cucumber__: For now there are only some simple web_steps turned into snippets
+* __Jquery__
+* __Sinatra__
 
 == Contribute
-Remember this is a project created by the community, so please Fill free to contribute.
 
+Remember this is a project created by the community, so please fill free to contribute.
 
+== Tips for Michael Sanders Snipmate.vim
+
+1 To list all the snippets available:
+  In insert mode, hit <c-r><tab>, then press <CR>(Enter) to select the snippet. Hit <tab> again to trigger snippet
+  If you want a different mapping, see the documentation with ":help snipmate-remap"  
+
+2 To reload snippets:
+  You can call ReloadAllSnippets(), or add a mapping.
