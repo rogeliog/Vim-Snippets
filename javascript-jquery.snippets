@@ -56,6 +56,9 @@ snippet getj
 snippet hide
 	$(${1:this}).hide();
 	${2}
+snippet highlight
+	$(${1:this}).effect("highlight",{color: ${2:#fff}, mode : ${3:show}}, ${4:3000})
+	${5}
 snippet html
 	$(${1:this}).html("${2:message}");
 	${3}
