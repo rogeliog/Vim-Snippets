@@ -38,10 +38,10 @@ snippet doc
 		${1}
 	});
 snippet each
-	$(${1:this}).each(function(){
-		${2};
-	};
-	${3}
+	$(${1:this}).each(function(ix,${2:obj}){
+		${3};
+	});
+	${4}
 snippet empty
 	$(${1:this}).empty();
 	${2}
